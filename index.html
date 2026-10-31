@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY TODO APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <span class="badge">MY TODO APP</span>
+      <h1>My Tasks 📝</h1>
+      <p class="subtitle">Stay organised. Get things done.</p>
+    </header>
+
+    <!-- Stats Dashboard Cards -->
+    <section class="stats-container">
+      <div class="stat-card">
+        <p>TOTAL TASKS</p>
+        <h1 id="total-count">3</h1>
+      </div>
+      <div class="stat-card">
+        <p>COMPLETED</p>
+        <h1 id="completed-count">1</h1>
+      </div>
+      <div class="stat-card">
+        <p>PENDING</p>
+        <h1 id="pending-count">2</h1>
+      </div>
+    </section>
+
+    <!-- Task Input Form -->
+    <section class="input-section">
+      <label for="task-input">Add a new task</label>
+      <input type="text" id="task-input" placeholder="Enter your Task">
+      <button id="add-btn">+ Add Task</button>
+    </section>
+
+    <!-- Task List Section -->
+    <section class="list-section">
+      <h2>Task List</h2>
+      <ul id="task-list">
+
+        <!-- Uncompleted Task Example -->
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox">
+          <span class="task-text">Learn Node</span>
+          <div class="task-actions">
+            <button class="edit-btn" aria-label="Edit task">✏️</button>
+            <button class="delete-btn" aria-label="Delete task">🗑️</button>
+          </div>
+        </li>
+
+        <!-- Completed Task Example -->
+        <li class="task-item completed">
+          <input type="checkbox" class="task-checkbox" checked>
+          <span class="task-text">Practise API testing</span>
+          <div class="task-actions">
+            <button class="edit-btn" aria-label="Edit task">✏️</button>
+            <button class="delete-btn" aria-label="Delete task">🗑️</button>
+          </div>
+        </li>
+
+        <!-- Another Uncompleted Task Example -->
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox">
+          <span class="task-text">Build Todo application</span>
+          <div class="task-actions">
+            <button class="edit-btn" aria-label="Edit task">✏️</button>
+            <button class="delete-btn" aria-label="Delete task">🗑️</button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
